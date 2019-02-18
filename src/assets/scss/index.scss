@@ -1,0 +1,55 @@
+// .bulma { 
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #c62828;
+$primary-invert: findColorInvert($primary);
+
+$grey: #888;
+$grey-invert: findColorInvert($grey);
+
+$success: #1E88E5;
+$danger: #c62828;
+$warning: #FF9100;
+$success-invert: findColorInvert($success);
+$danger-invert: findColorInvert($danger);
+$warning-invert: findColorInvert($warning);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "grey": ($grey, $grey-invert)
+);
+
+// Links
+$link: $primary;
+$link-hover: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// input
+$input-shadow: 0 0px 0px rgba($black, 0.1);
+
+// breadcrumb
+$breadcrumb-item-color: $dark;
+$breadcrumb-item-hover-color: $primary;
+$breadcrumb-item-active-color: $primary;
+$breadcrumb-item-separator-color: $dark;
+
+$button-hover-border-color: $primary;
+$button-hover-color: $primary;
+
+$size-small: 0.9em;
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+// }
